@@ -8,7 +8,7 @@ from gemini_helper import ask_gemini
 from pdf_generator import generate_pdf_report
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-change-this-in-production'  # Change this!
+app.secret_key = os.getenv('SECRET_KEY', 'default-dev-key-change-this-in-env')
 
 UPLOAD_FOLDER = 'uploads'
 DATA_FOLDER = 'user_data'
