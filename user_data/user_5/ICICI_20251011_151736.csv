@@ -1,0 +1,59 @@
+Transaction_Date,Merchant,Category,Amount,Card_Bill_Date,Remarks,Account_Balance
+03-01-2025,Amazon,Shopping,1245,03-01-2025,Online purchase,48755
+04-01-2025,Swiggy,Food,856,04-01-2025,Meal,47899
+05-01-2025,Uber,Travel,1110,05-01-2025,Cab ride,46789
+06-01-2025,Flipkart,Shopping,2899,06-01-2025,Gadgets,43890
+07-01-2025,Zomato,Food,940,07-01-2025,Delivery,42950
+08-01-2025,BookMyShow,Entertainment,1320,08-01-2025,Movies,41630
+09-01-2025,Myntra,Shopping,1675,09-01-2025,Clothing,39955
+10-01-2025,Indigo,Travel,5120,10-01-2025,Flight booking,34835
+11-01-2025,BigBasket,Groceries,1580,11-01-2025,Weekly grocery,33255
+12-01-2025,Recharge,Utilities,499,12-01-2025,Mobile recharge,32756
+13-01-2025,Apple,Electronics,3490,13-01-2025,Accessories,29266
+14-01-2025,MakeMyTrip,Travel,4280,14-01-2025,Hotel booking,24986
+15-01-2025,Croma,Electronics,2199,15-01-2025,Appliance,22787
+16-01-2025,Decathlon,Sports,1850,16-01-2025,Gear,20937
+17-01-2025,Dominos,Food,799,17-01-2025,Pizza,20138
+18-01-2025,Payment to ICICI Bank,Other,20000,18-01-2025,Statement payment,40138
+19-01-2025,Amazon,Shopping,975,19-01-2025,Online purchase,39163
+20-01-2025,Swiggy,Food,640,20-01-2025,Meal,38523
+21-01-2025,Uber,Travel,720,21-01-2025,Cab ride,37803
+22-01-2025,Flipkart,Shopping,2450,22-01-2025,Gadgets,35353
+23-01-2025,Zomato,Food,560,23-01-2025,Delivery,34793
+24-01-2025,BookMyShow,Entertainment,980,24-01-2025,Movies,33813
+25-01-2025,Myntra,Shopping,1540,25-01-2025,Clothing,32273
+26-01-2025,Indigo,Travel,4680,26-01-2025,Flight booking,27593
+27-01-2025,BigBasket,Groceries,1490,27-01-2025,Weekly grocery,26103
+28-01-2025,Recharge,Utilities,549,28-01-2025,Mobile recharge,25554
+29-01-2025,Apple,Electronics,2990,29-01-2025,Accessories,22564
+30-01-2025,MakeMyTrip,Travel,3720,30-01-2025,Hotel booking,18844
+31-01-2025,Croma,Electronics,1899,31-01-2025,Appliance,16945
+01-02-2025,Decathlon,Sports,1650,01-02-2025,Gear,15295
+02-02-2025,Dominos,Food,699,02-02-2025,Pizza,14596
+03-02-2025,Amazon,Shopping,1199,03-02-2025,Online purchase,13397
+04-02-2025,Swiggy,Food,640,04-02-2025,Meal,12757
+05-02-2025,Uber,Travel,880,05-02-2025,Cab ride,11877
+06-02-2025,Flipkart,Shopping,2199,06-02-2025,Gadgets,9678
+07-02-2025,Zomato,Food,540,07-02-2025,Delivery,9138
+08-02-2025,BookMyShow,Entertainment,890,08-02-2025,Movies,8248
+09-02-2025,Myntra,Shopping,1499,09-02-2025,Clothing,6749
+10-02-2025,Indigo,Travel,4520,10-02-2025,Flight booking,2229
+11-02-2025,Payment to ICICI Bank,Other,20000,11-02-2025,Statement payment,22229
+12-02-2025,Amazon,Shopping,899,12-02-2025,Online purchase,21330
+13-02-2025,Swiggy,Food,560,13-02-2025,Meal,20770
+14-02-2025,Uber,Travel,740,14-02-2025,Cab ride,20030
+15-02-2025,Flipkart,Shopping,1899,15-02-2025,Gadgets,18131
+16-02-2025,Zomato,Food,520,16-02-2025,Delivery,17611
+17-02-2025,BookMyShow,Entertainment,950,17-02-2025,Movies,16661
+18-02-2025,Myntra,Shopping,1390,18-02-2025,Clothing,15271
+19-02-2025,Indigo,Travel,3980,19-02-2025,Flight booking,11291
+20-02-2025,BigBasket,Groceries,1420,20-02-2025,Weekly grocery,9871
+21-02-2025,Recharge,Utilities,499,21-02-2025,Mobile recharge,9372
+22-02-2025,Apple,Electronics,2590,22-02-2025,Accessories,6782
+23-02-2025,MakeMyTrip,Travel,3290,23-02-2025,Hotel booking,3492
+24-02-2025,Croma,Electronics,1599,24-02-2025,Appliance,1893
+25-02-2025,Decathlon,Sports,1450,25-02-2025,Gear,443
+26-02-2025,Dominos,Food,599,26-02-2025,Pizza,156
+27-02-2025,Payment to ICICI Bank,Other,25000,27-02-2025,Statement payment,24844
+28-02-2025,Amazon,Shopping,1299,28-02-2025,Online purchase,23545
+01-03-2025,Swiggy,Food,680,01-03-2025,Meal,22865

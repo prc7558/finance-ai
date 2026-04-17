@@ -1,0 +1,291 @@
+{
+  "1": {
+    "name": "Parth",
+    "email": "parthrc7@gmail.com",
+    "phone": "45645645",
+    "address": "sodfnsg",
+    "created_at": "2025-10-11T11:32:40.758974",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_1\\HDFC_20251011_113508.csv",
+        "uploaded_at": "2025-10-11T11:35:08.919113",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "2": {
+    "name": "Yagnesh",
+    "email": "yagnesh@mmcoe.com",
+    "phone": "1234567890",
+    "address": "Wadar vasti, above vandevi mandir",
+    "created_at": "2025-10-11T13:24:39.610446",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "Yagnesh Local Bank",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_2\\Yagnesh_Local_Bank_20251011_132536.csv",
+        "uploaded_at": "2025-10-11T13:25:36.516940",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "3": {
+    "name": "Parth",
+    "email": "parthchaudhari2024.comp@mmcoe.edu.in",
+    "phone": "456456",
+    "address": "sgsdgf",
+    "created_at": "2025-10-11T13:44:29.543500",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_3\\HDFC_20251011_135937.csv",
+        "uploaded_at": "2025-10-11T13:59:37.390400",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "4": {
+    "name": "Parth",
+    "email": "parthrc7@gmail.com",
+    "phone": "456456",
+    "address": "gdfg",
+    "created_at": "2025-10-11T14:18:24.487679",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_4\\HDFC_20251011_141847.csv",
+        "uploaded_at": "2025-10-11T14:18:47.734155",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "5": {
+    "name": "Parth",
+    "email": "parthrc7@gmail.com",
+    "phone": "456456",
+    "address": "dgbcg",
+    "created_at": "2025-10-11T15:16:10.716822",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_5\\HDFC_20251011_152004.csv",
+        "uploaded_at": "2025-10-11T15:20:04.776337",
+        "rows": 60,
+        "columns": [
+          "Date",
+          "Description",
+          "Deposit",
+          "Withdrawal",
+          "Interest",
+          "Running_Balance",
+          "Account_Balance"
+        ],
+        "balance": 249520.0
+      }
+    ]
+  },
+  "6": {
+    "name": "Parth",
+    "email": "parthrc7@gmail.com",
+    "phone": "456456",
+    "address": "dfhdgh",
+    "created_at": "2025-10-11T15:47:01.594480",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_6\\HDFC_20251011_154957.csv",
+        "uploaded_at": "2025-10-11T15:49:57.467510",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "7": {
+    "name": "Neuro Chase",
+    "email": "anuragpatil2024.comp@mmcoe.edu.in",
+    "phone": "567",
+    "address": "sdfgh",
+    "created_at": "2025-10-11T16:12:19.425235",
+    "accounts": [
+      {
+        "id": 2,
+        "bank_name": "Zerodha",
+        "account_type": "Investment",
+        "filepath": "user_data\\user_7\\Zerodha_20251011_161401.csv",
+        "uploaded_at": "2025-10-11T16:14:01.534701",
+        "rows": 59,
+        "columns": [
+          "Trade_Date",
+          "Transaction_Type",
+          "Symbol",
+          "Quantity",
+          "Price_per_Unit",
+          "Total_Value",
+          "Fees",
+          "Net_Amount",
+          "Remarks",
+          "Account_Balance"
+        ],
+        "balance": -250057.61
+      }
+    ]
+  },
+  "8": {
+    "name": "Parth",
+    "email": "parthrc7@gmail.com",
+    "phone": "5446",
+    "address": "fgdfg",
+    "created_at": "2025-10-11T17:50:41.364564",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_8\\HDFC_20251011_175125.csv",
+        "uploaded_at": "2025-10-11T17:51:25.528331",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "9": {
+    "name": "Parth",
+    "email": "parthrc7@gmail.com",
+    "phone": "67567",
+    "address": "dfhdfgh",
+    "created_at": "2025-10-11T17:52:58.203744",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Investment",
+        "filepath": "user_data\\user_9\\HDFC_20251011_175658.csv",
+        "uploaded_at": "2025-10-11T17:56:58.495959",
+        "rows": 59,
+        "columns": [
+          "Trade_Date",
+          "Transaction_Type",
+          "Symbol",
+          "Quantity",
+          "Price_per_Unit",
+          "Total_Value",
+          "Fees",
+          "Net_Amount",
+          "Remarks",
+          "Account_Balance"
+        ],
+        "balance": -250057.61
+      }
+    ]
+  },
+  "10": {
+    "name": "fg",
+    "email": "bcx@f.c",
+    "phone": "567",
+    "address": "dthhf",
+    "created_at": "2025-10-12T14:59:43.686744",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "ICICI",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_10\\ICICI_20251012_150550.csv",
+        "uploaded_at": "2025-10-12T15:05:50.584923",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  },
+  "11": {
+    "name": "dhh",
+    "email": "parthrc7@gmail.com",
+    "phone": "dfhdh",
+    "address": "hdgh",
+    "created_at": "2026-04-17T22:32:31.344899",
+    "accounts": [
+      {
+        "id": 1,
+        "bank_name": "HDFC",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_11\\HDFC_20260417_223351.csv",
+        "uploaded_at": "2026-04-17T22:33:51.124631",
+        "rows": 60,
+        "columns": [
+          "Date",
+          "Description",
+          "Deposit",
+          "Withdrawal",
+          "Interest",
+          "Running_Balance",
+          "Account_Balance"
+        ],
+        "balance": 325660.0
+      },
+      {
+        "id": 2,
+        "bank_name": "Sample Bank",
+        "account_type": "Bank",
+        "filepath": "user_data\\user_11\\Sample_Bank_20260417_223835.csv",
+        "uploaded_at": "2026-04-17T22:38:35.320841",
+        "rows": 8,
+        "columns": [
+          "date",
+          "description",
+          "amount"
+        ],
+        "balance": 38100.0
+      }
+    ]
+  }
+}

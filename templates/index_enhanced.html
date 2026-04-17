@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Finance AI - Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container" role="application">
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">💰</div>
+      <div>
+        <div class="title" data-i18n="app_title">Finance AI</div>
+        <div class="subtitle" data-i18n="app_subtitle">Your personal financial assistant</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
+      <select class="lang-selector" id="langSelector" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+      </select>
+      <button class="logout-btn" onclick="window.location.href='/logout'" data-i18n="logout">Logout</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs" role="tablist">
+    <button class="tab active" role="tab" data-tab="dashboard" data-i18n="tab_dashboard">Dashboard</button>
+    <button class="tab" role="tab" data-tab="charts" data-i18n="tab_charts">Analytics</button>
+    <button class="tab" role="tab" data-tab="chat" data-i18n="tab_chat">Chat with AI</button>
+    <button class="tab" role="tab" data-tab="accounts" data-i18n="tab_accounts">Accounts</button>
+    <button class="tab" role="tab" data-tab="export" data-i18n="tab_export">Export Report</button>
+  </div>
+
+  <!-- DASHBOARD TAB -->
+  <section id="dashboard" class="tab-content active" role="tabpanel">
+    <div class="card blue-card">
+      <h2 data-i18n="total_balance">Total Balance</h2>
+      <div class="net-amount" id="totalBalance">₹0.00</div>
+      <div class="subtext" id="netChange" data-i18n="loading">Loading...</div>
+    </div>
+
+    <div class="small-cards">
+      <div class="small-card card">
+        <h3 data-i18n="total_income">Total Income</h3>
+        <div class="amount positive" id="totalIncome">₹0</div>
+      </div>
+      <div class="small-card card">
+        <h3 data-i18n="total_expenses">Total Expenses</h3>
+        <div class="amount negative" id="totalExpenses">₹0</div>
+      </div>
+      <div class="small-card card">
+        <h3 data-i18n="connected_accounts">Connected Accounts</h3>
+        <div class="amount" id="accountCount">0</div>
+      </div>
+    </div>
+
+    <div class="card insights" id="insightsContainer">
+      <div class="section-title" data-i18n="financial_insights">Financial Insights</div>
+      <div class="loading" data-i18n="upload_data_prompt">Upload your financial data to see insights...</div>
+    </div>
+  </section>
+
+  <!-- CHARTS/ANALYTICS TAB -->
+  <section id="charts" class="tab-content" role="tabpanel">
+    <h2 class="section-title" data-i18n="analytics_title">Financial Analytics</h2>
+    
+    <div class="chart-grid">
+      <div class="card">
+        <h3 style="margin-bottom: 10px;" data-i18n="spending_category">Spending by Category</h3>
+        <div class="chart-container">
+          <canvas id="categoryChart"></canvas>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3 style="margin-bottom: 10px;" data-i18n="monthly_trend">Monthly Trend</h3>
+        <div class="chart-container">
+          <canvas id="monthlyChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 20px;">
+      <h3 style="margin-bottom: 10px;" data-i18n="daily_spending">Daily Spending (Last 30 Days)</h3>
+      <div class="chart-container">
+        <canvas id="dailyChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAT TAB -->
+  <section id="chat" class="tab-content" role="tabpanel">
+    <div class="card chat-card">
+      <div class="chat-header">
+        <div class="chat-logo">💬</div>
+        <div>
+          <strong data-i18n="ai_assistant">Finance AI Assistant</strong><br>
+          <span class="chat-status" id="chatStatus" data-i18n="ready_to_help">● Ready to help</span>
+        </div>
+      </div>
+
+      <div id="chatMessages">
+        <div class="chat-message ai" data-i18n="welcome_message">
+          Hi! I'm your personal finance AI assistant. Upload your financial data and ask me anything about your spending habits, savings, or financial goals!
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input id="chatInput" type="text" data-i18n-placeholder="ask_finances" placeholder="Ask about your finances...">
+        <button id="sendBtn" type="button" data-i18n="send">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOUNTS TAB -->
+  <section id="accounts" class="tab-content" role="tabpanel">
+    <h2 class="section-title" data-i18n="connected_accounts_title">Connected Accounts</h2>
+    <div id="accountsList">
+      <div class="loading" data-i18n="loading_accounts">Loading accounts...</div>
+    </div>
+
+    <div class="upload-section">
+      <h3 data-i18n="add_new_account">➕ Add New Account</h3>
+      <form id="uploadForm">
+        <div class="form-group">
+          <label for="bankName" data-i18n="bank_name_label">Bank/Platform Name *</label>
+          <input type="text" id="bankName" name="bankName" required data-i18n-placeholder="bank_name_placeholder" placeholder="e.g., HDFC Bank, Zerodha">
+        </div>
+        
+        <div class="form-group">
+          <label for="accountType" data-i18n="account_type_label">Account Type *</label>
+          <select id="accountType" name="accountType" required>
+            <option value="Bank" data-i18n="account_type_bank">Bank Account</option>
+            <option value="Credit Card" data-i18n="account_type_credit">Credit Card</option>
+            <option value="Investment" data-i18n="account_type_investment">Investment</option>
+            <option value="Wallet" data-i18n="account_type_wallet">Digital Wallet</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="csvFile" data-i18n="upload_csv_label">Upload CSV File *</label>
+          <input type="file" id="csvFile" name="csvFile" accept=".csv" required>
+          <small style="color: var(--text-secondary); font-size: 12px; display: block; margin-top: 4px;" data-i18n="csv_requirement">
+            CSV must have columns: date, description, amount
+          </small>
+        </div>
+        
+        <button type="submit" class="upload-btn" id="uploadBtn" data-i18n="upload_connect">
+          Upload & Connect Account
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- EXPORT TAB -->
+  <section id="export" class="tab-content" role="tabpanel">
+    <div class="card">
+      <h2 class="section-title" data-i18n="export_title">📄 Export Financial Report</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="export_description">
+        Generate a comprehensive PDF report of all your financial data, including transactions, 
+        insights, spending categories, and account summaries.
+      </p>
+      
+      <div style="background: var(--bg-primary); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <strong style="color: var(--text-primary);" data-i18n="report_includes">Report includes:</strong>
+        <ul style="margin-top: 10px; margin-left: 20px; color: var(--text-primary);">
+          <li data-i18n="report_item_1">Personal information</li>
+          <li data-i18n="report_item_2">Financial summary (income, expenses, balance)</li>
+          <li data-i18n="report_item_3">All connected accounts</li>
+          <li data-i18n="report_item_4">Spending breakdown by category</li>
+          <li data-i18n="report_item_5">AI-generated insights</li>
+          <li data-i18n="report_item_6">Recent transactions</li>
+        </ul>
+      </div>
+      
+      <button class="export-btn" id="exportPdfBtn">
+        <span style="font-size: 20px;">📥</span>
+        <span data-i18n="download_pdf">Download PDF Report</span>
+      </button>
+    </div>
+  </section>
+</div>
+
+<script src="{{ url_for('static', filename='i18n.js') }}"></script>
+<script src="{{ url_for('static', filename='charts.js') }}"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

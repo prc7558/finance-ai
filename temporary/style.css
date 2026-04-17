@@ -1,0 +1,144 @@
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f5f6fa;
+      color: #222;
+      padding: 20px;
+    }
+    .container {
+		max-width: 980px;
+		margin: 0 auto;
+		background: white;
+		border-radius: 12px;
+		padding: 22px;
+		box-shadow: 0 6px 18px rgba(27,31,35,0.06);
+	}
+    .header {
+		display:flex;
+		align-items:center;
+		gap:12px;
+		margin-bottom: 12px;
+	}
+    .logo {
+		width:52px;
+		height:52px;
+		border-radius:12px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		background: linear-gradient(135deg,#667eea,#764ba2);
+		color: white; font-size:22px;
+	}
+    .title {
+		font-size: 22px;
+		font-weight:700;
+		color:#0f172a;
+	}
+    .subtitle {
+		color:#6b7280;
+		font-size:14px;
+		margin-top:8px;
+	}
+    .tabs {
+		display:flex;
+		gap:8px;
+		margin:18px 0 20px;
+		border-bottom: 1px solid #e6edf5;
+		padding-bottom: 8px;
+	}
+    .tab {
+		background: none;
+		border: none;
+		padding:10px 16px;
+		font-size:15px;
+		color:#475569;
+		cursor:pointer;
+		border-radius:8px 8px 0 0;
+		transition: all .15s ease;
+	}
+    .tab:hover {
+		color: #1f2937;
+		transform: translateY(-1px);
+	}
+    .tab.active {
+		background: #e6efff;
+		color: #1e40af;
+		font-weight:700;
+		box-shadow: 0 2px 6px rgba(30,64,175,0.08);
+	}
+    .tab-content {
+		display:none;
+	}
+    .tab-content.active {
+		display:block;
+	}
+    .card {
+		background: white;
+		border-radius: 12px;
+		padding:16px;
+		box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+		margin-bottom: 14px;
+		border: 1px solid #eef2ff;
+	}
+    .blue-card {
+		background: linear-gradient(135deg,#2563eb,#3b82f6);
+		color: white;
+		padding: 18px;
+	}
+    .blue-card h2 {
+		font-size:16px;
+		font-weight:600;
+		margin-bottom:6px;
+	}
+    .net-amount {
+		font-size:34px;
+		font-weight:800;
+		margin-top:4px;
+	}
+    .subtext {
+		font-size:13px;
+		opacity:0.95;
+		margin-top:6px;
+	}
+    .small-cards { display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:12px; }
+    .small-card { background:white; padding:12px; border-radius:10px; text-align:left; border:1px solid #f1f5f9; }
+    .small-card h3 { font-size:14px; color:#0f172a; margin-bottom:8px; }
+    .small-card .amount { font-size:18px; font-weight:700; }
+    .insights .alert { background:#eef4ff; color:#1e40af; padding:10px; border-radius:8px; margin-bottom:8px; }
+    .insights .success { background:#ecfdf5; color:#047857; padding:10px; border-radius:8px; }
+    .chat-card { padding:16px; }
+    .chat-header { display:flex; gap:12px; align-items:center; margin-bottom:8px; }
+    .chat-logo { width:46px; height:46px; border-radius:10px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#6c63ff,#9333ea); color:white; font-size:18px; }
+    .chat-status { font-size:13px; color:#10b981; }
+    .chat-message { background:#f8fafc; padding:12px; border-radius:10px; margin:8px 0; color:#0f172a; }
+    .chat-input { display:flex; gap:10px; align-items:center; margin-top:10px; }
+    .chat-input input { flex:1; padding:10px 12px; border-radius:8px; border:1px solid #e6eefb; font-size:14px; }
+    .chat-input button { background:#2563eb; color:white; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; font-weight:600; }
+    .account { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:14px; border-radius:10px; background:white; border:1px solid #eef2ff; margin-bottom:12px; }
+    .account-info strong { font-size:15px; display:block; margin-bottom:4px; }
+    .account-info span { font-size:13px; color:#6b7280; }
+    .amount-small { font-weight:700; font-size:16px; }
+    .positive { color:#047857; }
+    .negative { color:#dc2626; }
+    .add-account { text-align:center; padding:22px; border:2px dashed #e6eefb; border-radius:10px; margin-top:8px; }
+    .add-account button { background:#2563eb; color:white; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; }
+    .privacy-header { background: linear-gradient(135deg,#667eea,#764ba2); color: #fff; padding:16px; border-radius:10px; margin-bottom:12px; }
+    .section-title { font-weight:700; margin-bottom:10px; font-size:16px; color:#0f172a; }
+    .setting-item { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px; border-radius:10px; background:#fafafa; border:1px solid #eef6ff; margin-bottom:10px; }
+    .setting-info { display:flex; gap:12px; align-items:center; }
+    .lock-icon { width:40px; height:40px; border-radius:8px; display:flex; align-items:center; justify-content:center; background:#f0f2f7; font-size:18px; }
+    .setting-text h4 { font-size:15px; margin-bottom:4px; }
+    .setting-text p { font-size:13px; color:#6b7280; }
+    .toggle-switch { position: relative; width:56px; height:30px; }
+    .toggle-switch input { opacity:0; width:0; height:0; }
+    .slider { position:absolute; inset:0; background:#d1d5db; border-radius:34px; transition:all .25s; }
+    .slider::before { content:""; position:absolute; height:24px; width:24px; left:3px; bottom:3px; background:white; border-radius:50%; transition:all .25s; }
+    .toggle-switch input:checked + .slider { background:#10b981; }
+    .toggle-switch input:checked + .slider::before { transform: translateX(26px); }
+    .info-box { background:#f0f7ff; border:1px solid #c7e0f4; padding:14px; border-radius:10px; margin-bottom:12px; }
+    .info-box ul { list-style:none; margin-left:0; padding-left:10px; }
+    .info-box li { color:#1e40af; margin-bottom:8px; position:relative; padding-left:16px; }
+    .info-box li::before { content:"•"; position:absolute; left:0; font-weight:700; }
+    .export-button { display:flex; justify-content:space-between; align-items:center; padding:12px; border-radius:10px; border:1px solid #e6eefb; background:white; opacity:0.6; cursor:not-allowed; }
+    @media (max-width:720px) { .small-cards { grid-template-columns: 1fr; } .container { padding:14px; } .tabs { flex-wrap:wrap; } }
+  
